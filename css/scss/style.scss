@@ -1,0 +1,19 @@
+@import 'reset';
+
+*{
+    box-sizing: border-box;
+}
+
+.bkg_img{
+    background-image: url('../../Motorcycle\ Expedition\ Company\ Website\ PSD.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.wrapper{
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    overflow-x: hidden;
+}
