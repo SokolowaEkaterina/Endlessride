@@ -263,7 +263,7 @@ h2{
             height: 38px;
 
             border-radius: 19px;
-            border: 1ps solid transparent;
+            border: 1px solid transparent;
 
             text-align: center;
             font-size: 21px;
@@ -276,6 +276,8 @@ h2{
             margin-left: 1.5%;
             margin-top: 15.4%;
 
+            transition: background-color .5s, color .5s, border .5s;
+
             &:hover{
                 background-color: #ffffff;
                 color: $pink_color;
@@ -287,25 +289,278 @@ h2{
 
 
 /*we_are_world_wide*/
+.wrapper_03{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .we_are_world_wide{
     margin-top: 4%;
+
+    padding-bottom: 5%;
 
     display: flex;
 
     position: relative;
 
+    .left_block{
+
+        background-color: $pink_color;
+
+        margin-top: 4%;
+        margin-bottom: 3.3%;
+
+        padding-top: 2.5%;
+        padding-left: 19.2%;
+
+        width: 50%;
+
+        color: #FFF;
+
+
+        .riasons_block{
+
+            .little_reasons_b{
+                margin-bottom: 7.5%;
+
+                .title_reasons_b{
+                    font-family: 'Helvetica LT Std';
+                    font-size: 26px;
+                    letter-spacing: -1px;
+    
+                    margin-top: 5%;
+                    margin-bottom: 2%;
+                } 
+
+                .text{
+                    width: 65%;
+
+                    opacity: 44%;
+                }
+            }
+        }
+    }
+
     >img{
-        width: 30%;
+        width: 18%;
 
         position: absolute;
-        top: 6%;
+        top: 1%;
         left: 50%;
 
-        margin-left: -15%;
+        margin-left: -9%;
+    }
 
+    .right_block{
+        background-color: #FFF;
+
+        width: 50%;
+
+        margin-top: 7%;
+
+        .box{
+            width: 44.3%;
+
+            margin-left: 23%;
+            margin-top: 8%;
+
+            padding-bottom: 1.5%;
+
+            .little_right_b{
+
+                display: flex;
+                flex-wrap: wrap;
+
+                padding-bottom: 5%;
+
+                margin-bottom: 10%;
+
+                position: relative;
+
+                img{
+                    position: absolute;
+                    top: 0;
+                }
+                .name{
+                    font-family: 'BebasNeue';
+                    color: #5e5e5e;
+                    font-weight: 700;
+                    font-size: 48px;
+    
+                    margin-left: 37%;
+                }
+    
+                .status{
+                    font-size: 25px;
+                    color: #979797;
+                    font-weight: 400;
+                    font-family: 'BebasNeue';
+
+                    margin: 2.5% 0 0 4.4%;
+                }
+
+                .text{
+                    width: 60%;
+
+                    margin-left: 35.7%;
+                    margin-top: 1%;
+
+                    color: #040404;
+
+                    opacity: 66%;
+                }
+
+                &:nth-child(2){
+                    img{
+                        right: 0;
+                    }
+
+                    .name,
+                    .text{
+                        margin-left: 1%;
+                    }
+                }
+            }
+        }
     }
 }
 
+
+/*we_are_world_wide_02*/
+.we_are_world_wide_02{
+    margin-top: 0.5%;
+
+    text-align: center;
+
+    h2{
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        span{
+            color: $pink_color;
+        }
+    }
+
+    .text{ 
+        display: block;
+
+        margin: 0 auto;
+
+        width: 67%;
+        color: #5d5c5c;
+    }
+
+    .block_content_we_are_02{
+        display: flex;
+
+        margin-top: 1%;
+
+        .left_block{
+            background-color: #FFF;
+
+            width: 47%;
+
+            margin-top: 6.8%;
+
+            padding: 3% 0 0% 0;
+
+            img{
+                display: block;
+                margin-left: 31%;
+            }
+
+            .name{
+                font-family: 'BebasNeue';
+                font-weight: 800;
+                font-size: 29px;
+                letter-spacing: 0px;
+                line-height: 33px;
+                color: #212121;
+
+                margin-top: -10%;
+                margin-left: 10%;
+            }
+
+            .status{
+                font-family: 'BebasNeue';
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 0px;
+                line-height: 29px;
+                color: #212121;
+
+                margin-left: 12%;
+            }
+
+            .text{
+                text-align: center;
+                color: #212121;
+                line-height: 27px;
+
+                width: 80%;
+
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 9.5%;
+
+            }
+        }
+        
+        >img{
+            width: 35%;
+            height: 100%;
+
+            margin-left: 10%;
+        }
+    }
+}
+
+
+/*since_1880*/
+.since_1880{
+    position: relative;
+
+    opacity: 50%;
+
+    background-color: #1a1919;
+    background-image: url(../../img/guided_motorcycle_tours_since_1880/2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    text-align: center;
+
+    h2{
+        color: #FFF;
+        margin-top: 6%;
+        margin-bottom: 1.8%;
+        span{
+            color: $pink_color;
+        }
+    }
+
+    .text{
+        display: block;
+
+        margin: 0 auto;
+        width: 74%;
+    }
+
+    img{
+        position: absolute;
+        left: 50%;
+        top: 70%;
+
+        margin-left: -10%;
+
+        width: 20%;
+    }
+
+    .content_block_since_1880{
+        display: flex;
+    }
+}
 
 /*contacts*/
 .contacts{

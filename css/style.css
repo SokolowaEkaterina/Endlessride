@@ -279,7 +279,7 @@ h2 {
   width: 112px;
   height: 38px;
   border-radius: 19px;
-  border: 1ps solid transparent;
+  border: 1px solid transparent;
   text-align: center;
   font-size: 21px;
   color: #FFF;
@@ -288,6 +288,7 @@ h2 {
   padding-top: 8px;
   margin-left: 1.5%;
   margin-top: 15.4%;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
 }
 .mine_scrin .first_block .bt:hover {
   background-color: #ffffff;
@@ -296,17 +297,199 @@ h2 {
 }
 
 /*we_are_world_wide*/
+.wrapper_03 {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .we_are_world_wide {
   margin-top: 4%;
+  padding-bottom: 5%;
   display: flex;
   position: relative;
 }
+.we_are_world_wide .left_block {
+  background-color: #26d2e9;
+  margin-top: 4%;
+  margin-bottom: 3.3%;
+  padding-top: 2.5%;
+  padding-left: 19.2%;
+  width: 50%;
+  color: #FFF;
+}
+.we_are_world_wide .left_block .riasons_block .little_reasons_b {
+  margin-bottom: 7.5%;
+}
+.we_are_world_wide .left_block .riasons_block .little_reasons_b .title_reasons_b {
+  font-family: "Helvetica LT Std";
+  font-size: 26px;
+  letter-spacing: -1px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.we_are_world_wide .left_block .riasons_block .little_reasons_b .text {
+  width: 65%;
+  opacity: 44%;
+}
 .we_are_world_wide > img {
-  width: 30%;
+  width: 18%;
   position: absolute;
-  top: 6%;
+  top: 1%;
   left: 50%;
-  margin-left: -15%;
+  margin-left: -9%;
+}
+.we_are_world_wide .right_block {
+  background-color: #FFF;
+  width: 50%;
+  margin-top: 7%;
+}
+.we_are_world_wide .right_block .box {
+  width: 44.3%;
+  margin-left: 23%;
+  margin-top: 8%;
+  padding-bottom: 1.5%;
+}
+.we_are_world_wide .right_block .box .little_right_b {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  margin-bottom: 10%;
+  position: relative;
+}
+.we_are_world_wide .right_block .box .little_right_b img {
+  position: absolute;
+  top: 0;
+}
+.we_are_world_wide .right_block .box .little_right_b .name {
+  font-family: "BebasNeue";
+  color: #5e5e5e;
+  font-weight: 700;
+  font-size: 48px;
+  margin-left: 37%;
+}
+.we_are_world_wide .right_block .box .little_right_b .status {
+  font-size: 25px;
+  color: #979797;
+  font-weight: 400;
+  font-family: "BebasNeue";
+  margin: 2.5% 0 0 4.4%;
+}
+.we_are_world_wide .right_block .box .little_right_b .text {
+  width: 60%;
+  margin-left: 35.7%;
+  margin-top: 1%;
+  color: #040404;
+  opacity: 66%;
+}
+.we_are_world_wide .right_block .box .little_right_b:nth-child(2) img {
+  right: 0;
+}
+.we_are_world_wide .right_block .box .little_right_b:nth-child(2) .name,
+.we_are_world_wide .right_block .box .little_right_b:nth-child(2) .text {
+  margin-left: 1%;
+}
+
+/*we_are_world_wide_02*/
+.we_are_world_wide_02 {
+  margin-top: 0.5%;
+  text-align: center;
+}
+.we_are_world_wide_02 h2 {
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.we_are_world_wide_02 h2 span {
+  color: #26d2e9;
+}
+.we_are_world_wide_02 .text {
+  display: block;
+  margin: 0 auto;
+  width: 67%;
+  color: #5d5c5c;
+}
+.we_are_world_wide_02 .block_content_we_are_02 {
+  display: flex;
+  margin-top: 1%;
+}
+.we_are_world_wide_02 .block_content_we_are_02 .left_block {
+  background-color: #FFF;
+  width: 47%;
+  margin-top: 6.8%;
+  padding: 3% 0 0% 0;
+}
+.we_are_world_wide_02 .block_content_we_are_02 .left_block img {
+  display: block;
+  margin-left: 31%;
+}
+.we_are_world_wide_02 .block_content_we_are_02 .left_block .name {
+  font-family: "BebasNeue";
+  font-weight: 800;
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 33px;
+  color: #212121;
+  margin-top: -10%;
+  margin-left: 10%;
+}
+.we_are_world_wide_02 .block_content_we_are_02 .left_block .status {
+  font-family: "BebasNeue";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 29px;
+  color: #212121;
+  margin-left: 12%;
+}
+.we_are_world_wide_02 .block_content_we_are_02 .left_block .text {
+  text-align: center;
+  color: #212121;
+  line-height: 27px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9.5%;
+}
+.we_are_world_wide_02 .block_content_we_are_02 > img {
+  width: 35%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+/*since_1880*/
+.since_1880 {
+  position: relative;
+  opacity: 50%;
+  background-color: #1a1919;
+  background-image: url(../../img/guided_motorcycle_tours_since_1880/2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+}
+.since_1880 h2 {
+  color: #FFF;
+  margin-top: 6%;
+  margin-bottom: 1.8%;
+}
+.since_1880 h2 span {
+  color: #26d2e9;
+}
+.since_1880 .text {
+  display: block;
+  margin: 0 auto;
+  width: 74%;
+}
+.since_1880 img {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  margin-left: -10%;
+  width: 20%;
+}
+.since_1880 .content_block_since_1880 {
+  display: flex;
 }
 
 /*contacts*/
