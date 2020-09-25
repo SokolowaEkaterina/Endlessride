@@ -1,6 +1,6 @@
 @import 'reset';
 
-$gray_color: /*#ededed*/ rgb(117, 189, 189);
+
 $pink_color: /*#cd0a2d*/ #26d2e9;
 $red_color: #c60909;
 
@@ -11,14 +11,17 @@ $red_color: #c60909;
     font-weight: 400;
     letter-spacing: 0px;
     line-height: 24px;
-    color: #ffffff;
+    color: #ededed;
 }
 
-.bkg_img{
+body{
+    background-color: #ededed;
+}
+/*.bkg_img{
     background-image: url('../../Motorcycle\ Expedition\ Company\ Website\ PSD.jpg');
     background-repeat: no-repeat;
     background-position: top center;
-}
+}*/
 
 .wrapper{
     max-width: 1210px;
@@ -134,7 +137,7 @@ h2{
 /*mine_scrin*/
 
 .mine_scrin{
-    background-image: url(../../img/first_block/background_02.png);
+    background-image: url(../../img/first_block/background.png);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 11%;
@@ -519,15 +522,30 @@ h2{
 
 /*since_1880*/
 .since_1880{
+    &::before{
+        content: '';
+        display: block;
+
+        width: 50%;
+        height: 67%;
+
+        background-color: $pink_color;
+
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+
+        opacity: 60%;
+    }
+
     position: relative;
 
-    opacity: 50%;
 
     background-color: #1a1919;
     background-image: url(../../img/guided_motorcycle_tours_since_1880/2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: center top;
 
     text-align: center;
 
@@ -550,35 +568,299 @@ h2{
     img{
         position: absolute;
         left: 50%;
-        top: 70%;
+        top: 30%;
+        z-index: 10;
 
-        margin-left: -10%;
+        margin-left: -9.5%;
 
-        width: 20%;
+        width: 19%;
     }
 
     .content_block_since_1880{
+        margin-top: 16%;
+
         display: flex;
+        justify-content: space-between;
+
+        position: relative;
+        z-index: 10;
+
+        .little_content_b,
+        .rlittle_content_b{
+            width: 50%;
+
+            align-items: center;
+
+            .text{
+                margin-top: 15.5%;
+                margin-bottom: 23%;
+
+                width: 80%;
+
+                float: left;
+            }
+        }
+
+        .days{
+            margin-right: auto;
+
+            width: 20%;
+
+            display: flex;
+            align-items: center;
+
+            color: #FFF;
+            font-family: 'BebasNeue';
+            font-weight: 800;
+
+            .days_big{
+                font-size: 45px;
+                line-height: 40px;
+
+                margin-left: 60%;
+                span{
+                    font-size: 87px;
+                }
+            }
+
+            .days_smole{
+                font-size: 29px;
+                line-height: 23px;
+
+                margin-left: 20%;
+
+                span{
+                    font-size: 55px;
+                }
+            }
+        }
+
+        .rlittle_content_b{
+            .text{
+                float: right;
+            }
+            .days{
+                margin-left: auto;
+
+                .days_big{
+                    margin-left: -20%;
+                    span{  
+                        font-size: 124px;
+                    }
+                }
+                .days_smole{
+                    margin-left: 70%;
+                }
+            }
+        }
+    }
+}
+
+/*travel_blog*/
+.travel_blog{
+    margin-top: 7%;
+
+    h2{
+        text-align: center;
+    }
+    .text{
+        margin-top: 2%;
+        color: #1a1919;
+        font-weight: 500;
+        line-height: 27px;
+
+        width: 67%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .travel_block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-top: 3%;
+
+        .little_trevel_b{
+            width: 31%;
+
+            .img_trevel_wrapper{
+                height: 351px;
+                width: 100%;
+
+                position: relative;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+
+                    object-fit: cover;
+
+                    position: relative;
+                    z-index: 1;
+
+                }
+
+                p{
+                    position: relative;
+                    z-index: 10; 
+
+                    font-family: 'BebasNeue';
+                    font-weight: 400;
+                    font-size: 22px;
+                    letter-spacing: 1px;
+
+                    color: #FFF;
+
+                    top: -22%;
+                    left: 2%;
+                }
+                .title{
+                    position: relative;
+                    z-index: 10;
+
+                    font-size: 36px;
+                    font-weight: 800;
+                }
+
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 187px solid $red_color; 
+                    border-right: 187px solid transparent;	
+
+                    position: absolute;
+                    z-index: 5;
+                    bottom: -22px;
+                    left: -20px;
+                }
+            }
+
+            .title_trevel_b{
+                font-size: 26px;
+                letter-spacing: 1px;
+                color: #202020;
+                font-family: 'Helvetica LT Std';
+
+                margin-top: 13%;
+            }
+
+            .text{
+                color: #676767;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/*start_your_jurney*/
+.start_your_jurney{
+    position: relative;
+
+    margin-top: 4%;
+
+    padding-top: 5.4%;
+    padding-bottom: 9.5%;
+    text-align: center;
+    color: #FFF;
+
+    background-image: url(../../img/start_your_jurney/background_1.png);
+    background-size: cover;
+
+    .text{
+        margin: 2.5% auto 0;
+        width: 67%;
+    }
+
+    img{
+        position: absolute;
+        left: 50%;
+        bottom: -13%;
+        margin-left: -3%;
+
+        width: 6%;
     }
 }
 
 /*contacts*/
 .contacts{
     width: 100%;
+
+    margin-top: 6.5%;
+
+    .main_contacts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+
+        width: 100%;
+
+        .littel_main_c{
+            position: relative;
+
+            width: 23%;
+            
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .title_main_c{
+                width: 100%;
+
+                margin: -1% 0 3% 30%;
+
+                font-size: 28px;
+                letter-spacing: 1px;
+                color: #181818;
+                font-family: 'Helvetica LT Std';
+            }
+
+            img{
+                position: absolute;
+                left: 0;
+                top: 10%;
+            }
+
+            a,
+            p{
+                font-style: 16px;
+                letter-spacing: 0px;
+                line-height: 24px;
+                color: #262626;
+                font-weight: 400;
+                font-family: 'Lato';
+
+                margin-left: 80px;
+
+                transition: color .3s;
+
+            }
+            a:hover{
+                color: #f0d839;
+            }
+        }
+    }
+
     .soc_contacts{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
 
-        width: 80%;
+        width: 60%;
 
-        margin-left: auto;
-        margin-right: auto;
-
+        margin: 5.2% auto 0;
 
         a{
-            display: block;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             width: 67px;
             height: 67px;
@@ -586,9 +868,32 @@ h2{
             border: 3px solid #f0d839;
             border-radius: 33px;
 
-            padding-top: 16px;
+            transition: background-color .3s;
 
-            text-align: center;
+            img{
+                position: absolute;
+            }
+
+            &:hover{
+                background-color:  #f0d839;
+            }
         }
     }
+}
+
+/*footer*/
+footer{
+    margin-top: 4%;
+
+    padding: 2.5% 0 2.5%;
+
+    background-color: $pink_color;
+
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-family: 'Lato';
+    color: #FFF;
 }

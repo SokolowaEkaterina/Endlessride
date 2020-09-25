@@ -81,15 +81,18 @@ a {
   font-weight: 400;
   letter-spacing: 0px;
   line-height: 24px;
-  color: #ffffff;
+  color: #ededed;
 }
 
-.bkg_img {
-  background-image: url("../../Motorcycle Expedition Company Website PSD.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+body {
+  background-color: #ededed;
 }
 
+/*.bkg_img{
+    background-image: url('../../Motorcycle\ Expedition\ Company\ Website\ PSD.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}*/
 .wrapper {
   max-width: 1210px;
   padding: 0 15px;
@@ -183,7 +186,7 @@ h2 {
 }
 /*mine_scrin*/
 .mine_scrin {
-  background-image: url(../../img/first_block/background_02.png);
+  background-image: url(../../img/first_block/background.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 11%;
@@ -460,13 +463,23 @@ h2 {
 /*since_1880*/
 .since_1880 {
   position: relative;
-  opacity: 50%;
   background-color: #1a1919;
   background-image: url(../../img/guided_motorcycle_tours_since_1880/2.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center top;
   text-align: center;
+}
+.since_1880::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 67%;
+  background-color: #26d2e9;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  opacity: 60%;
 }
 .since_1880 h2 {
   color: #FFF;
@@ -484,33 +497,251 @@ h2 {
 .since_1880 img {
   position: absolute;
   left: 50%;
-  top: 70%;
-  margin-left: -10%;
-  width: 20%;
+  top: 30%;
+  z-index: 10;
+  margin-left: -9.5%;
+  width: 19%;
 }
 .since_1880 .content_block_since_1880 {
+  margin-top: 16%;
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.since_1880 .content_block_since_1880 .little_content_b,
+.since_1880 .content_block_since_1880 .rlittle_content_b {
+  width: 50%;
+  align-items: center;
+}
+.since_1880 .content_block_since_1880 .little_content_b .text,
+.since_1880 .content_block_since_1880 .rlittle_content_b .text {
+  margin-top: 15.5%;
+  margin-bottom: 23%;
+  width: 80%;
+  float: left;
+}
+.since_1880 .content_block_since_1880 .days {
+  margin-right: auto;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-family: "BebasNeue";
+  font-weight: 800;
+}
+.since_1880 .content_block_since_1880 .days .days_big {
+  font-size: 45px;
+  line-height: 40px;
+  margin-left: 60%;
+}
+.since_1880 .content_block_since_1880 .days .days_big span {
+  font-size: 87px;
+}
+.since_1880 .content_block_since_1880 .days .days_smole {
+  font-size: 29px;
+  line-height: 23px;
+  margin-left: 20%;
+}
+.since_1880 .content_block_since_1880 .days .days_smole span {
+  font-size: 55px;
+}
+.since_1880 .content_block_since_1880 .rlittle_content_b .text {
+  float: right;
+}
+.since_1880 .content_block_since_1880 .rlittle_content_b .days {
+  margin-left: auto;
+}
+.since_1880 .content_block_since_1880 .rlittle_content_b .days .days_big {
+  margin-left: -20%;
+}
+.since_1880 .content_block_since_1880 .rlittle_content_b .days .days_big span {
+  font-size: 124px;
+}
+.since_1880 .content_block_since_1880 .rlittle_content_b .days .days_smole {
+  margin-left: 70%;
+}
+
+/*travel_blog*/
+.travel_blog {
+  margin-top: 7%;
+}
+.travel_blog h2 {
+  text-align: center;
+}
+.travel_blog .text {
+  margin-top: 2%;
+  color: #1a1919;
+  font-weight: 500;
+  line-height: 27px;
+  width: 67%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.travel_blog .travel_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.travel_blog .travel_block .little_trevel_b {
+  width: 31%;
+}
+.travel_blog .travel_block .little_trevel_b .img_trevel_wrapper {
+  height: 351px;
+  width: 100%;
+  position: relative;
+}
+.travel_blog .travel_block .little_trevel_b .img_trevel_wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.travel_blog .travel_block .little_trevel_b .img_trevel_wrapper p {
+  position: relative;
+  z-index: 10;
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #FFF;
+  top: -22%;
+  left: 2%;
+}
+.travel_blog .travel_block .little_trevel_b .img_trevel_wrapper .title {
+  position: relative;
+  z-index: 10;
+  font-size: 36px;
+  font-weight: 800;
+}
+.travel_blog .travel_block .little_trevel_b .img_trevel_wrapper::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 187px solid #c60909;
+  border-right: 187px solid transparent;
+  position: absolute;
+  z-index: 5;
+  bottom: -22px;
+  left: -20px;
+}
+.travel_blog .travel_block .little_trevel_b .title_trevel_b {
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: #202020;
+  font-family: "Helvetica LT Std";
+  margin-top: 13%;
+}
+.travel_blog .travel_block .little_trevel_b .text {
+  color: #676767;
+  width: 100%;
+}
+
+/*start_your_jurney*/
+.start_your_jurney {
+  position: relative;
+  margin-top: 4%;
+  padding-top: 5.4%;
+  padding-bottom: 9.5%;
+  text-align: center;
+  color: #FFF;
+  background-image: url(../../img/start_your_jurney/background_1.png);
+  background-size: cover;
+}
+.start_your_jurney .text {
+  margin: 2.5% auto 0;
+  width: 67%;
+}
+.start_your_jurney img {
+  position: absolute;
+  left: 50%;
+  bottom: -13%;
+  margin-left: -3%;
+  width: 6%;
 }
 
 /*contacts*/
 .contacts {
   width: 100%;
+  margin-top: 6.5%;
+}
+.contacts .main_contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.contacts .main_contacts .littel_main_c {
+  position: relative;
+  width: 23%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts .main_contacts .littel_main_c .title_main_c {
+  width: 100%;
+  margin: -1% 0 3% 30%;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #181818;
+  font-family: "Helvetica LT Std";
+}
+.contacts .main_contacts .littel_main_c img {
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.contacts .main_contacts .littel_main_c a,
+.contacts .main_contacts .littel_main_c p {
+  font-style: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #262626;
+  font-weight: 400;
+  font-family: "Lato";
+  margin-left: 80px;
+  transition: color 0.3s;
+}
+.contacts .main_contacts .littel_main_c a:hover {
+  color: #f0d839;
 }
 .contacts .soc_contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 60%;
+  margin: 5.2% auto 0;
 }
 .contacts .soc_contacts a {
-  display: block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 67px;
   height: 67px;
   border: 3px solid #f0d839;
   border-radius: 33px;
-  padding-top: 16px;
+  transition: background-color 0.3s;
+}
+.contacts .soc_contacts a img {
+  position: absolute;
+}
+.contacts .soc_contacts a:hover {
+  background-color: #f0d839;
+}
+
+/*footer*/
+footer {
+  margin-top: 4%;
+  padding: 2.5% 0 2.5%;
+  background-color: #26d2e9;
   text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-family: "Lato";
+  color: #FFF;
 }
