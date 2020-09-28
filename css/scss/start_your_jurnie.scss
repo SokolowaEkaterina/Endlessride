@@ -1,0 +1,30 @@
+$pink_color: /*#cd0a2d*/ #26d2e9;
+$red_color: #c60909;
+
+.start_your_jurney{
+    position: relative;
+
+    margin-top: 4%;
+
+    padding-top: 5.4%;
+    padding-bottom: 9.5%;
+    text-align: center;
+    color: #FFF;
+
+    background-image: url(../../img/start_your_jurney/background_1.png);
+    background-size: cover;
+
+    .text{
+        margin: 2.5% auto 0;
+        width: 67%;
+    }
+
+    img{
+        position: absolute;
+        left: 50%;
+        bottom: -13%;
+        margin-left: -3%;
+
+        width: 6%;
+    }
+}

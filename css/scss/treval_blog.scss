@@ -1,0 +1,101 @@
+$pink_color: /*#cd0a2d*/ #26d2e9;
+$red_color: #c60909;
+
+.travel_blog{
+    margin-top: 7%;
+
+    h2{
+        text-align: center;
+    }
+    .text{
+        margin-top: 2%;
+        color: #1a1919;
+        font-weight: 500;
+        line-height: 27px;
+
+        width: 67%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .travel_block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-top: 3%;
+
+        .little_trevel_b{
+            width: 31%;
+
+            .img_trevel_wrapper{
+                height: 351px;
+                width: 100%;
+
+                position: relative;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+
+                    object-fit: cover;
+
+                    position: relative;
+                    z-index: 1;
+
+                }
+
+                p{
+                    position: relative;
+                    z-index: 10; 
+
+                    font-family: 'BebasNeue';
+                    font-weight: 400;
+                    font-size: 22px;
+                    letter-spacing: 1px;
+
+                    color: #FFF;
+
+                    top: -22%;
+                    left: 2%;
+                }
+                .title{
+                    position: relative;
+                    z-index: 10;
+
+                    font-size: 36px;
+                    font-weight: 800;
+                }
+
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 187px solid $red_color; 
+                    border-right: 187px solid transparent;	
+
+                    position: absolute;
+                    z-index: 5;
+                    bottom: -22px;
+                    left: -20px;
+                }
+            }
+
+            .title_trevel_b{
+                font-size: 26px;
+                letter-spacing: 1px;
+                color: #202020;
+                font-family: 'Helvetica LT Std';
+
+                margin-top: 13%;
+            }
+
+            .text{
+                color: #676767;
+                width: 100%;
+            }
+        }
+    }
+}
