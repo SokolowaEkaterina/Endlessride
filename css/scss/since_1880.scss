@@ -1,6 +1,3 @@
-$pink_color: /*#cd0a2d*/ #26d2e9;
-$red_color: #c60909;
-
 .since_1880{
     &::before{
         content: '';
@@ -58,6 +55,7 @@ $red_color: #c60909;
 
     .content_block_since_1880{
         margin-top: 16%;
+
 
         display: flex;
         justify-content: space-between;

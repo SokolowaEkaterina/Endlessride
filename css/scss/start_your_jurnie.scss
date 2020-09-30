@@ -28,3 +28,58 @@ $red_color: #c60909;
         width: 6%;
     }
 }
+@media screen and (max-width:935px){
+    .start_your_jurney{
+        .text{
+            width: 90%;
+        }
+        img{
+            width: 8%;
+            margin-left: -4%;
+        }
+    }
+}
+@media screen and (max-width:710px){
+    .start_your_jurney{
+        img{
+            width: 10%;
+            margin-left: -5%;
+            bottom: -19%;
+        }
+    }
+}
+@media screen and (max-width:470px){
+    .start_your_jurney{
+        img{
+            width: 13%;
+            margin-left: -6.5%;
+            bottom: -22%;
+        }
+    }
+}
+@media screen and (max-width:437px){
+    .start_your_jurney{
+        img{
+            width: 15%;
+            margin-left: -7.5%;
+            bottom: -22%;
+        }
+    }
+}
+@media screen and (max-width:380px){
+    .start_your_jurney{
+        .text{
+            width: 100%;
+        }
+        img{
+            bottom: -20%;
+        }
+    }
+}
+@media screen and (max-width:345px){
+    .start_your_jurney{
+        img{
+            bottom: -18%;
+        }
+    }
+}
