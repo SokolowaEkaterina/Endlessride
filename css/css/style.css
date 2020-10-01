@@ -1090,6 +1090,103 @@ h2 {
   margin-left: 70%;
 }
 
+@media screen and (max-width: 1760px) {
+  .since_1880 img {
+    top: 35%;
+  }
+}
+@media screen and (max-width: 1630px) {
+  .since_1880 img {
+    width: 20%;
+    margin-left: -10%;
+    top: 35%;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .since_1880 img {
+    top: 39%;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .since_1880 img {
+    width: 22%;
+    margin-left: -11%;
+    top: 39%;
+  }
+}
+@media screen and (max-width: 1325px) {
+  .since_1880 img {
+    top: 44%;
+  }
+}
+@media screen and (max-width: 1215px) {
+  .since_1880 {
+    background-size: cover;
+  }
+  .since_1880 .content_block_since_1880 .days .days_smole {
+    margin-left: 0;
+  }
+  .since_1880 img {
+    width: 24%;
+    margin-left: -12%;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .since_1880 .content_block_since_1880 .rlittle_content_b .days {
+    margin-top: -2%;
+    margin-right: 45%;
+    margin-left: none;
+  }
+  .since_1880 .content_block_since_1880 .rlittle_content_b .days .days_big {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1029px) {
+  .since_1880 .content_block_since_1880 .rlittle_content_b .days {
+    margin-right: 50%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .since_1880 img {
+    width: 22%;
+    margin-left: -11%;
+    top: 54%;
+  }
+}
+@media screen and (max-width: 968px) {
+  .since_1880 .content_block_since_1880 .rlittle_content_b .days {
+    margin-right: 55%;
+  }
+}
+@media screen and (max-width: 868px) {
+  .since_1880 img {
+    display: none;
+  }
+  .since_1880 .content_block_since_1880 .rlittle_content_b .days {
+    margin-right: 58%;
+  }
+}
+@media screen and (max-width: 857px) {
+  .since_1880::before {
+    height: 60%;
+  }
+  .since_1880 .content_block_since_1880 .rlittle_content_b .days {
+    margin-right: 62%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .since_1880::before {
+    height: 60%;
+  }
+  .since_1880 .content_block_since_1880 {
+    flex-wrap: wrap;
+  }
+  .since_1880 .content_block_since_1880 .rlittle_content_b,
+.since_1880 .content_block_since_1880 .little_content_b {
+    width: 100%;
+  }
+}
 .travel_blog {
   margin-top: 7%;
 }
@@ -1322,13 +1419,59 @@ h2 {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 100%;
   }
   .contacts .main_contacts .littel_main_c {
-    width: 100%;
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 7%;
+  }
+  .contacts .main_contacts .littel_main_c a,
+.contacts .main_contacts .littel_main_c p,
+.contacts .main_contacts .littel_main_c .title_main_c {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .contacts .main_contacts {
+    margin-top: 8%;
+  }
+  .contacts .main_contacts .littel_main_c {
+    width: 50%;
+    margin-left: 30%;
+  }
+  .contacts .soc_contacts {
+    width: 100%;
+    justify-content: center;
+  }
+  .contacts .soc_contacts a {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .contacts .main_contacts {
+    margin-top: 10%;
+  }
+  .contacts .main_contacts .littel_main_c {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .contacts .main_contacts {
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contacts .main_contacts {
+    margin-top: 20%;
+  }
+  .contacts .main_contacts .littel_main_c {
+    width: 100%;
+    margin-left: 5%;
   }
 }
 footer {

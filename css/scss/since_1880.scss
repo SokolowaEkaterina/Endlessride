@@ -133,3 +133,149 @@
         }
     }
 }
+@media screen and (max-width:1760px){
+    .since_1880{
+        img{
+            top: 35%;
+        }
+    }
+}
+@media screen and (max-width:1630px){
+    .since_1880{
+        img{
+            width: 20%;
+            margin-left: -10%;
+            top: 35%;
+        }
+    }
+}
+@media screen and (max-width:1550px){
+    .since_1880{
+        img{
+            top: 39%;
+        }
+    }
+}
+@media screen and (max-width:1460px){
+    .since_1880{
+        img{
+            width: 22%;
+            margin-left: -11%;
+            top: 39%;
+        }
+    }
+}
+@media screen and (max-width:1325px){
+    .since_1880{
+        img{
+            top: 44%;
+        }
+    }
+}
+@media screen and (max-width:1215px){
+    .since_1880{
+        .content_block_since_1880{
+            .days{
+                .days_smole{
+                    margin-left: 0;
+                }
+            }
+        }
+        background-size: cover;
+        img{
+            width: 24%;
+            margin-left: -12%;
+            top: 45%;
+        }
+    }
+}
+@media screen and (max-width:1080px){
+    .since_1880{
+        .content_block_since_1880{
+            .rlittle_content_b{
+                .days{
+                    margin-top: -2%;
+                    margin-right: 45%;
+                    margin-left: none;
+
+                    .days_big{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1029px){
+    .since_1880{
+        .content_block_since_1880{
+            .rlittle_content_b{
+                .days{
+                    margin-right: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:980px){
+    .since_1880{
+        img{
+            width: 22%;
+            margin-left: -11%;
+            top: 54%;
+        }
+    }
+}
+@media screen and (max-width:968px){
+    .since_1880{
+        .content_block_since_1880{
+            .rlittle_content_b{
+                .days{
+                    margin-right: 55%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:868px){
+    .since_1880{
+        img{
+            display: none;
+        }
+        .content_block_since_1880{
+            .rlittle_content_b{
+                .days{
+                    margin-right: 58%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:857px){
+    .since_1880{
+        &::before{
+            height: 60%;
+        }
+        .content_block_since_1880{
+            .rlittle_content_b{
+                .days{
+                    margin-right: 62%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .since_1880{
+        &::before{
+            height: 60%;
+        }
+        .content_block_since_1880{
+            flex-wrap: wrap;
+            .rlittle_content_b,
+            .little_content_b{
+                width: 100%;
+            }
+        }
+    }
+}
