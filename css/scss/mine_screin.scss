@@ -1,4 +1,4 @@
-$pink_color: /*#cd0a2d*/ #26d2e9;
+$pink_color: #cd0a2d;
 
 
 .mine_scrin{
@@ -230,13 +230,11 @@ $pink_color: /*#cd0a2d*/ #26d2e9;
         }
     }
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:441px){
     .mine_scrin .first_block{
 
         .little_first_b{
-            width: 89%;
-
-            margin: 0 auto 5%;
+            width: 90%;
         }
     }
 }

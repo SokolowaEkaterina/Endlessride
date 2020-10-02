@@ -99,3 +99,28 @@ $red_color: #c60909;
         }
     }
 }
+@media screen and (max-width:1235px){
+    .travel_block{
+        padding-left: 20px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:940px){
+    .travel_blog .travel_block{
+        padding-left: 0%;
+
+        .little_trevel_b{
+            width: 70%;
+
+            margin: 0 auto 5%;
+        }
+    }
+}
+@media screen and (max-width:441px){
+    .travel_blog .travel_block{
+
+        .little_trevel_b{
+            width: 90%;
+        }
+    }
+}
