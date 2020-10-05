@@ -1346,6 +1346,9 @@ h2 {
   }
 }
 @media screen and (max-width: 940px) {
+  .travel_blog .text {
+    width: 100%;
+  }
   .travel_blog .travel_block {
     padding-left: 0%;
   }
@@ -1383,7 +1386,7 @@ h2 {
 
 @media screen and (max-width: 935px) {
   .start_your_jurney .text {
-    width: 90%;
+    width: 100%;
   }
   .start_your_jurney img {
     width: 8%;

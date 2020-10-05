@@ -106,13 +106,18 @@ $red_color: #c60909;
     }
 }
 @media screen and (max-width:940px){
-    .travel_blog .travel_block{
-        padding-left: 0%;
-
-        .little_trevel_b{
-            width: 70%;
-
-            margin: 0 auto 5%;
+    .travel_blog{
+        .text{
+            width: 100%;
+        }
+        .travel_block{
+            padding-left: 0%;
+    
+            .little_trevel_b{
+                width: 70%;
+    
+                margin: 0 auto 5%;
+            }
         }
     }
 }
