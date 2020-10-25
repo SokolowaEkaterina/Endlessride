@@ -89,9 +89,24 @@
 
                 position: relative;
 
-                img{
+                .img_sircl{
                     position: absolute;
-                    top: 0;
+
+                    width: 127px;
+                    height: 127px;
+
+                    border-radius: 50%;
+                    border: 6px solid #dcdcdc;
+
+                    overflow: hidden;
+                    img {
+                        display: block;
+                        object-fit: cover;
+
+
+                        height: 100%;
+                        max-width: 100%;
+                    }
                 }
                 .name{
                     font-family: 'BebasNeue';
@@ -123,7 +138,7 @@
                 }
 
                 &:nth-child(2){
-                    img{
+                    .img_sircl{
                         right: 0;
                     }
 
@@ -424,7 +439,7 @@
             .box{
                 .little_right_b{
                     .name{
-                        margin-left: 27%;
+                        margin-left: 30%;
 
                         font-size: 38px;
                     }
@@ -434,10 +449,52 @@
                         margin: 4% 0 0 2.5%;
                     }
                     .text{
-                        margin-left: 27%;
+                        margin-left: 30%;
                     }
-                    img{
-                        width: 23%;
+                    .img_sircl{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:365px){
+    .we_are_world_wide{
+        .right_block{
+            .box{
+                .little_right_b{
+                    .name{
+                        margin-left: 35%;
+                    }
+                    .text{
+                        margin-left: 35%;
+                    }
+                    .img_sircl{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:365px){
+    .we_are_world_wide{
+        .right_block{
+            .box{
+                .little_right_b{
+                    .name{
+                        margin-left: 30%;
+                    }
+                    .text{
+                        margin-left: 30%;
+                    }
+                    .img_sircl{
+                        width: 70px;
+                        height: 70px;
                     }
                 }
             }

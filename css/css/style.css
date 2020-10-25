@@ -602,9 +602,19 @@ h2 {
   margin-bottom: 10%;
   position: relative;
 }
-.we_are_world_wide .right_block .box .little_right_b img {
+.we_are_world_wide .right_block .box .little_right_b .img_sircl {
   position: absolute;
-  top: 0;
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  border: 6px solid #dcdcdc;
+  overflow: hidden;
+}
+.we_are_world_wide .right_block .box .little_right_b .img_sircl img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
 }
 .we_are_world_wide .right_block .box .little_right_b .name {
   font-family: "BebasNeue";
@@ -627,7 +637,7 @@ h2 {
   color: #040404;
   opacity: 66%;
 }
-.we_are_world_wide .right_block .box .little_right_b:nth-child(2) img {
+.we_are_world_wide .right_block .box .little_right_b:nth-child(2) .img_sircl {
   right: 0;
 }
 .we_are_world_wide .right_block .box .little_right_b:nth-child(2) .name,
@@ -826,7 +836,7 @@ h2 {
 }
 @media screen and (max-width: 425px) {
   .we_are_world_wide .right_block .box .little_right_b .name {
-    margin-left: 27%;
+    margin-left: 30%;
     font-size: 38px;
   }
   .we_are_world_wide .right_block .box .little_right_b .status {
@@ -834,10 +844,36 @@ h2 {
     margin: 4% 0 0 2.5%;
   }
   .we_are_world_wide .right_block .box .little_right_b .text {
-    margin-left: 27%;
+    margin-left: 30%;
   }
-  .we_are_world_wide .right_block .box .little_right_b img {
-    width: 23%;
+  .we_are_world_wide .right_block .box .little_right_b .img_sircl {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .we_are_world_wide .right_block .box .little_right_b .name {
+    margin-left: 35%;
+  }
+  .we_are_world_wide .right_block .box .little_right_b .text {
+    margin-left: 35%;
+  }
+  .we_are_world_wide .right_block .box .little_right_b .img_sircl {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .we_are_world_wide .right_block .box .little_right_b .name {
+    margin-left: 30%;
+  }
+  .we_are_world_wide .right_block .box .little_right_b .text {
+    margin-left: 30%;
+  }
+  .we_are_world_wide .right_block .box .little_right_b .img_sircl {
+    width: 70px;
+    height: 70px;
   }
 }
 .we_are_world_wide_02 {
@@ -867,10 +903,23 @@ h2 {
   width: 47%;
   margin-top: 6.8%;
   padding: 3% 0 3% 0;
+  /*img{
+      display: block;
+      margin-left: 31%;
+  }*/
 }
-.we_are_world_wide_02 .block_content_we_are_02 .left_block img {
-  display: block;
+.we_are_world_wide_02 .block_content_we_are_02 .left_block .img_sercle_02 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  overflow: hidden;
   margin-left: 31%;
+}
+.we_are_world_wide_02 .block_content_we_are_02 .left_block .img_sercle_02 img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .we_are_world_wide_02 .block_content_we_are_02 .left_block .name {
   font-family: "BebasNeue";
@@ -904,17 +953,17 @@ h2 {
   width: 35%;
   height: 100%;
   margin-left: 10%;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 1140px) {
-  .we_are_world_wide_02 .block_content_we_are_02 .left_block img {
+  .we_are_world_wide_02 .block_content_we_are_02 .left_block .img_sercle_02 {
     margin-left: 25%;
   }
 }
 @media screen and (max-width: 1072px) {
   .we_are_world_wide_02 .block_content_we_are_02 > img {
     width: 40%;
-    align-self: flex-end;
   }
 }
 @media screen and (max-width: 895px) {
@@ -943,7 +992,7 @@ h2 {
   .we_are_world_wide_02 .block_content_we_are_02 {
     position: relative;
   }
-  .we_are_world_wide_02 .block_content_we_are_02 .left_block img {
+  .we_are_world_wide_02 .block_content_we_are_02 .left_block .img_sercle_02 {
     margin-left: 20%;
   }
   .we_are_world_wide_02 .block_content_we_are_02 .left_block .name {
@@ -976,7 +1025,7 @@ h2 {
     margin: 0 auto;
     padding: 3% 3% 5%;
   }
-  .we_are_world_wide_02 .block_content_we_are_02 .left_block img {
+  .we_are_world_wide_02 .block_content_we_are_02 .left_block .img_sercle_02 {
     margin-left: 15%;
     margin-top: 5%;
   }
